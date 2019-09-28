@@ -67,6 +67,7 @@ router.get('/productos', function(req, res, next) {
   findProductos(callback);
 });
 
+/* POST productos */
 router.post("/productos", function(req,res,next){
   function callback(data){
     res.json(data);
@@ -74,5 +75,7 @@ router.post("/productos", function(req,res,next){
   let data  = req.body;
   createProductos(data, callback);
 })
+
+
 
 module.exports = router;
