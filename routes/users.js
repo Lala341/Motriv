@@ -7,3 +7,6 @@ router.get('/', function(req, res, next) {
 });
 
 module.exports = router;
+router.post('/', function(req, res){
+  console.log(req);
+})
