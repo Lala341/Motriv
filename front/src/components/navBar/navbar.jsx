@@ -10,7 +10,7 @@ class NavBar extends Component {
     this.state = {
       isOpen: false,
       titulos: [
-        { nombre: "Bolsos", ruta: "/#/bolsos" },
+        { nombre: "Productos", ruta: "/#/productos" },
         { nombre: "Aretes", ruta: "/#/aretes" },
         { nombre: "Collares", ruta: "/#/collares" },
         { nombre: "Pulseras", ruta: "/#/pulseras" },

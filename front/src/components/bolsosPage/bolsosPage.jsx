@@ -26,7 +26,7 @@ class BolsosPage extends Component {
   }
 
   refresh = () => {
-    let promesa = axios.get("/crudBolsos", {
+    let promesa = axios.get("/productos", {
       headers: {
         "Content-Type": "application/x-www-form-urlencoded"
       }

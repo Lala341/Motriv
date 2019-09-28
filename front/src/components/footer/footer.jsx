@@ -15,7 +15,7 @@ class Footer extends Component {
         <div id="lineaRoja" />
         <div className="fondoGris">
           <div className="fila">
-            <h4 className="item">maccoaccesorios@outlook.es</h4>
+            <h4 className="item">motriv@outlook.es</h4>
             <h4 className="item">cel: 320 847 8097</h4>
             <h4 className="item">Bogota, Colombia</h4>
           </div>
