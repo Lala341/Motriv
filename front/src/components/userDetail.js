@@ -23,8 +23,7 @@ class userDetail extends Component {
             password : m.password,
             correo:m.correo,
             rol:m.rol,
-            productos: m.productos
-            
+            productos: m.productos   
         });
         
     });
@@ -65,9 +64,8 @@ class userDetail extends Component {
                     </div>
                     </div>
                     <br></br>
-                    <h3>Correo:         {this.state.correo} </h3>
-                    <h3>Rol:            {this.state.rol} </h3>
-                    <h3>Password:       {this.state.password} </h3>
+                    <h3>User:      {this.state.usuario}</h3>
+                    <h3>Password:       {this.state.password}</h3>
 <br></br>
 <br></br>
 <div className="contenedor">

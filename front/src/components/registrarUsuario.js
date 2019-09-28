@@ -31,7 +31,7 @@ class RegistrarUsuario extends Component {
 
     handleSubmit=(e)=>{
         e.preventDefault();
-        var data = {usuario:document.getElementById("name").value,password:document.getElementById("password").value,correo:document.getElementById("email").value, cursos:[],calificaciones:[], rol:"USUARIO"}
+        var data = {usuario:document.getElementById("name").value,password:document.getElementById("password").value}
         localStorage.setItem("user",JSON.stringify(data));
       
         fetch('/usuarios/', {
@@ -71,11 +71,7 @@ class RegistrarUsuario extends Component {
                         <input type="password" id="password" className="form-control" placeholder="Ingresa tu contraseña" ></input>
                     </div>
                     <div >
-                        <label >Email</label>
-                        <input type="text" id="email" className="form-control" placeholder="email"  ></input>
-                    </div>
-                    <div >
-                        <button onClick = { (event)=>{this.handleSubmit(event)} } className="btn btn-primary">Registrarse</button>
+                        <button onClick = { (event)=>{this.handleSubmit(event)} } className="btn btn-primary mt-3">Registrarse</button>
                     </div>
                 </form>
                 </div>
