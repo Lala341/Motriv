@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Redirect} from 'react-router-dom';
+import "../comp-css/institucion.css";
 
 class cardInstitucion extends Component {
     state={
@@ -22,9 +23,9 @@ class cardInstitucion extends Component {
         return (
             <div className="col-5">
 
-            <div className="card" >
+            <div className="card" id="imagenProd">
              
-            <img src={this.state.image} className="card-img-top" alt="hola" width="50" height="400"></img>
+            <img src={this.state.image} className="card-img-top" id="imgProd" alt="hola" width="50" height="400"></img>
             <div className="card-body">
            
              <button  onClick = { this.setRedirect } className="btn btn-primary">{this.state.nombre}</button>

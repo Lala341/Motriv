@@ -76,7 +76,7 @@ class Institucion extends Component {
 <br></br>
 <div id="contenedor" className="text-center">
 
-<div >
+<div id="imagenProd">
 
 <img src={this.state.image} className="img-fluid" alt="Institution" width="900" height="500"></img>
 
@@ -88,8 +88,8 @@ class Institucion extends Component {
 
 </div>
 <div className="row">
-<div id="columna-descripcion" className="col-8">
-<h1 className="text-center">{this.state.nombre}</h1>
+  <div id="columna-descripcion" className="col-8">
+  <h1 className="text-center">{this.state.nombre}</h1>
 <br></br>
 
 <br></br>
