@@ -1,8 +1,13 @@
 #imagenProd{
   height: 100%;
-  border-style: solid;
-  border-color: black;
+  width: 100%;
 }
 #imgProd{
-  height: 50%
+  height: 70%
+}
+#contenedorProd{
+  height: 100%;
+  border-style: solid;
+  border-color: black;
+  margin-left: 15%;
 }

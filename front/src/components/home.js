@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import InstitucionList from './institucionList';
+import "../comp-css/home.css";
 
 
 
@@ -37,8 +38,8 @@ class home extends Component {
                <div className="row">
                    <br></br> 
                    <br></br>            
-                <h2>Instituciones</h2>   
-                              <InstitucionList ></InstitucionList>
+{/*                 <h2>Instituciones</h2>    */}
+                <InstitucionList ></InstitucionList>
                          
 
             </div>
