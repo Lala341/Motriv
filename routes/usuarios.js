@@ -14,6 +14,11 @@ app.get("/", (req, res) => {
     getAll((data) => {
         res.send(data);
     })
+});
+app.get("/callcenter", (req, res) => {
+    getAll((data) => {
+        res.send(data);
+    })
 })
 
 function getAll(callback) {
@@ -44,6 +49,12 @@ function getUsuario(callback, nombre) {
 }
 
 app.post("/", (req, res) => {
+    var datos = req.body;
+    write((data) => {
+        res.send(data);
+    }, datos)
+});
+app.post("/callcenter", (req, res) => {
     var datos = req.body;
     write((data) => {
         res.send(data);
