@@ -45,14 +45,15 @@ class RegistrarInstitucion extends Component {
         
         var data = {
             nombre: document.getElementById("1").value,
-            cantidad: document.getElementById("21").value,
-            precio: document.getElementById("22").value,
-            fechaCultivo: document.getElementById("4"),
-            ubicacion: document.getElementById("s11"),
-            descripcion: document.getElementById("3").value,
-            clima: document.getElementById("s22").value,
+            cantidad: document.getElementById("2").value,
+            precio: document.getElementById("3").value,
+            fechaCultivo: document.getElementById("5"),
+            ubicacion: document.getElementById("6").value,
+            clima: document.getElementById("7").value,
+            descripcion: document.getElementById("4"),
             calificaciones: []
-            }
+        }
+
         fetch('/instituciones/', {
             method: 'POST', // or 'PUT'
             body: JSON.stringify(data), // data can be `string` or {object}!
@@ -82,46 +83,35 @@ class RegistrarInstitucion extends Component {
                     </div>
                     <div >
                         <label >Cantidad</label>
-                        <input type="text" id="21" className="form-control" placeholder="Hora "  ></input>
+                        <input type="text" id="2" className="form-control" placeholder="Cantidad "  ></input>
                     </div>
                     <div >
                         <label >Precio </label>
-                        <input type="text" id="22" className="form-control" placeholder="Hora "  ></input>
+                        <input type="text" id="3" className="form-control" placeholder="Precio "  ></input>
                     </div>
                     <div >
                         <label >Descripcion</label>
-                        <textarea className="form-control" id="3" rows="3"></textarea>
+                        <textarea className="form-control" id="4" rows="3"></textarea>
                     </div>
                     
                     <div >
                         <label >Fecha Cultivo</label>
-                        <input type="text" id="4" className="form-control" placeholder="email"  ></input>
+                        <input type="text" id="5" className="form-control" placeholder="Fecha Cultivo"  ></input>
                     </div>
                     <div >
                     
-                        <label > Ubicacion</label>
-                        <input type="text" id="s11" className="form-control" placeholder="Direccion sede"  ></input>
+                        <label >Ubicacion</label>
+                        <input type="text" id="6" className="form-control" placeholder="Ubicación"  ></input>
                    </div>
-                    
-                    <div >
-                        <label >Telefono</label>
-                        <input type="number" id="s12" className="form-control" placeholder="Telefono sede"  ></input>
-                    </div>
                     
                     <br></br>
-
-                    <div >
-                       
-                        <label >Dirección</label>
-                        <input type="text" id="s21" className="form-control" placeholder="Direccion sede"  ></input>
-                   </div>
                     
                     <div >
                         <label >Clima</label>
-                        <input type="number" id="s22" className="form-control" placeholder="Telefono sede"  ></input>
+                        <input type="text" id="7" className="form-control" placeholder="Clima"  ></input>
                     </div>
                     <div >
-                        <button onClick = { (event)=>{this.handleSubmit(event)} } className="btn btn-primary">Registrarse</button>
+                        <button onClick = { (event)=>{this.handleSubmit(event)} } className="btn btn-primary mt-3">Registrarse</button>
                     </div>
                 </form>
                 </div>

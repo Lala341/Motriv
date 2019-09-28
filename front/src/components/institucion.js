@@ -99,11 +99,8 @@ class Institucion extends Component {
 <p align="justify">{this.state.descripcion}</p>
 <br></br>
 <br></br>
-<h2>Cursos</h2>
-
-<br></br>
-                <br></br>
-                             
+<h2>Propietario</h2>
+<p>Felipe Rodriguez</p>
 <br></br>
 <br></br>
 <h2>Escribir</h2>
