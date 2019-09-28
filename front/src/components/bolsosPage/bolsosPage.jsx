@@ -33,8 +33,9 @@ class BolsosPage extends Component {
    });
   }
 
-/*   refresh = () => {
-    let promesa = axios.get("/crudBolsos", {
+/* 
+  refresh = () => {
+    let promesa = axios.get("/productos", {
       headers: {
         "Content-Type": "application/x-www-form-urlencoded"
       }
