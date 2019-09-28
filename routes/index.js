@@ -1,80 +1,23 @@
 var express = require('express');
 var router = express.Router();
+//Ejemplo conexion mongoDB
+const MongoClient = require('mongodb').MongoClient;
+const uri = "mongodb+srv://admin:admin@proyectoweb-n33pf.mongodb.net/test?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true });
 
-let Mongoclient = require("mongodb").MongoClient;
 
-let url = "mongodb+srv://motriv:motriv1234@motriv-cluster001-jok7h.mongodb.net/test?retryWrites=true&w=majority";
-let client = new Mongoclient(url, {useNewUrlParser:true});
 
-let db = "motriv";
-let colProd = "productos"
-let colAgricultores = "agricultores";
-let colCompradores = "colCompradores";
+/* GET home page. */
+router.get('/prueba', function (req, res, next) {
 
-function findProductos(callback){
-  client.then(cli => {
-    cli.db(db).collection(colProd).find({}).toArray((err, data) => {
-      callback(data);
-    })
-  })
-}
+  client.connect(err => {
+    client.db("Idioma").collection("Usuarios").find({}).toArray((err, data) => {
+      res.send(data)
+    });
+    client.close();
+  });
 
-function findAgricultores(callback){
-  client.then(client => {
-    client.db(db).collection(colAgricultores).find({}).toArray((err, data) => {
-      callback(data);
-    })
-  })
-}
-
-function findCompradores(callback){
-  client.then(client => {
-    client.db(db).collection(colCompradores).find({}).toArray((err, data) => {
-      callback(data);
-    })
-  })
-}
-
-function createProductos(callback){
-  client.then(client => {
-    client.db(db).collection(colProd).insertOne(content, (err, data) =>{
-      callback(data);
-    })
-  })
-}
-
-function createAgricultor(callback){
-  client.then(client => {
-    client.db(db).collection(colAgricultores).insertOne(content, (err, data) =>{
-      callback(data);
-    })
-  })
-}
-
-function createComprador(callback){
-  client.then(client => {
-    client.db(db).collection(colCompradores).insertOne(content, (err, data) =>{
-      callback(data);
-    })
-  })
-}
-
-/* GET productos */
-router.get('/productos', function(req, res, next) {
-  function callback(data){
-    res.json(data);
-  }
-  findProductos(callback);
 });
-
-/* POST productos */
-router.post("/productos", function(req,res,next){
-  function callback(data){
-    res.json(data);
-  }
-  let data  = req.body;
-  createProductos(data, callback);
-})
 
 
 
