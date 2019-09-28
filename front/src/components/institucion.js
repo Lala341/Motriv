@@ -7,13 +7,12 @@ class Institucion extends Component {
 //this.props.value.
     state={
         nombre : "",
-        calificaciones  : [],
-        cursos:[],
-        horario : "",
-        descripcion:"",
-        image: "https://www.touchstoneedu.com/wp-content/uploads/2018/10/cambridge-universtiy-press-touchstone-educationals.jpg",
-        correo: "",
-        sedes: []
+        cantidad  : "",
+        precio:"",
+        fechaCultivo: "",
+        ubicacion:"",
+        imageUrl: "https://www.touchstoneedu.com/wp-content/uploads/2018/10/cambridge-universtiy-press-touchstone-educationals.jpg",
+        clima: ""
 
     }
     componentDidMount () {
@@ -24,12 +23,11 @@ class Institucion extends Component {
             console.log("2");
             this.setState({
                 nombre : m.nombre,
-            horario : m.horario,
-            correo:m.correo,
-            cursos: m.cursos,
-            calificaciones:m.calificaciones,
-            descripcion: m.descripcion,
-            sedes:m.sedes,
+                cantidad : m.cantidad,
+                precio:m.precio,
+                fechaCultivo: m.fechaCultivo,
+                ubicacion:m.ubicacion,
+                clima: m.clima
 
             
         });
