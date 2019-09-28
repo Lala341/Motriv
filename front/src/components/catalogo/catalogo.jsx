@@ -172,8 +172,6 @@ class Catalogo extends Component {
             </div>
           </div>
         }
-
-
       </div >
     );
   }

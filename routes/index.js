@@ -12,8 +12,8 @@ let colAgricultores = "agricultores";
 let colCompradores = "colCompradores";
 
 function findProductos(callback){
-  client.then(client => {
-    client.db(db).collection(colProd).find({}).toArray((err, data) => {
+  client.then(cli => {
+    cli.db(db).collection(colProd).find({}).toArray((err, data) => {
       callback(data);
     })
   })
