@@ -11,7 +11,7 @@ class NavBar extends Component {
       isOpen: false,
       titulos: [
         { nombre: "Productos", ruta: "/#/productos" },
-        { nombre: "Aretes", ruta: "/#/aretes" },
+        { nombre: "Productores", ruta: "/#/productores" },
         { nombre: "Collares", ruta: "/#/collares" },
         { nombre: "Pulseras", ruta: "/#/pulseras" },
         { nombre: "Swarosky", ruta: "/#/swarosky" },

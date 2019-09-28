@@ -43,7 +43,7 @@ class App extends Component {
         <Route path="/" component={HomePage} exact />
         <Route path="/administrador" render={(props) => <LoginForm {...props} autenticado={this.state.autenticado} handleAuthentication={this.handleAuthentication} handleCerrarSesion={this.handleCerrarSesion} />} exact />
         <Route path="/productos" render={(props) => <BolsosPage {...props} autenticado={this.state.autenticado} />} />
-        <Route path="/aretes" render={(props) => <AretesPage {...props} autenticado={this.state.autenticado} />} />
+        <Route path="/productores" render={(props) => <AretesPage {...props} autenticado={this.state.autenticado} />} />
         <Route path="/collares" render={(props) => <CollaresPage {...props} autenticado={this.state.autenticado} />} />
         <Route path="/pulseras" render={(props) => <PulserasPage {...props} autenticado={this.state.autenticado} />} />
         <Route path="/swarosky" render={(props) => <SwaroskyPage {...props} autenticado={this.state.autenticado} />} />

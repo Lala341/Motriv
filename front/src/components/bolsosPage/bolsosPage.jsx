@@ -48,7 +48,7 @@ class BolsosPage extends Component {
     return (
       <React.Fragment>
         <div>
-          <img className="imagen" src="https://res.cloudinary.com/drfggfn8f/image/upload/v1568479748/macco/bolsos/kbm6hsxlel13qoijtr9v.JPG" />
+          <img className="imagen" src="http://img2.rtve.es/i/?w=1600&i=1529697257299.jpg" />
         </div>
         {this.renderProductos()}        
       </React.Fragment>
