@@ -11,7 +11,7 @@ class home extends Component {
             <div className="container">
 
 <div className="logotipo">
-<img src="https://i.ibb.co/J7HxNLs/oie-g-YBLPr-Mnh-Te-G.png" className="img-fluid" alt="Institution" width="600" height="200"></img>
+<img src="https://i.ibb.co/CP2nVfS/04030091-1f7b-42c6-b7d5-882d7c3a2c5c.jpg" className="img-fluid" alt="Institution" width="600" height="200"></img>
 </div>
 <br></br>
 <br></br>
@@ -23,7 +23,7 @@ class home extends Component {
                     <div className="col-1"></div>
                      <div className="col-5">
                          <div className="cont-img">
-                         <img id="imghome"src="http://blog.infoempleo.com/media/2018/02/ThinkstockPhotos-646037264.jpg" alt="Italian Trulli"/>
+                         <img id="imghome"src="https://i.ibb.co/CP2nVfS/04030091-1f7b-42c6-b7d5-882d7c3a2c5c.jpg" alt="Italian Trulli"/>
                          </div>
                     </div>
                     <div className="col-5">

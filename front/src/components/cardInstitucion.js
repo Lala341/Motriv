@@ -21,7 +21,7 @@ class cardInstitucion extends Component {
         return (
             <div className="col-5">
             <div className="card" >
-            <img src="https://images.vexels.com/media/users/3/152803/isolated/preview/7a26300dc9960e11f6a46966e696539d-escuela-cl--sica-ilustraci--n-de-edificio-by-vexels.png" className="card-img-top" alt="hola" width="50" height="400"></img>
+            <img src="http://img2.rtve.es/i/?w=1600&i=1529697257299.jpg" className="card-img-top" alt="hola" width="50" height="400"></img>
             <div className="card-body">
            
              <button  onClick = { this.setRedirect } className="btn btn-primary">{this.state.nombre}</button>

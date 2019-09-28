@@ -22,15 +22,10 @@ class userDetail extends Component {
             usuario : m.usuario,
             password : m.password,
             correo:m.correo,
-            cursos: m.cursos,
             rol:m.rol,
-            calificaciones:m.calificaciones
             
         });
-        fetch("/usuarios/"+nextProps.value.usuario+"/calificaciones").then(res => res.json()).then(n=>{console.log(n);console.log("2");this.setState({
-            calificaciones:n
-            
-        })});
+        
     });
         
     }
@@ -77,10 +72,6 @@ class userDetail extends Component {
 <div className="contenedor">
 <h2>Cursos</h2>
 
-                    <Cursos value={{e:this.state.cursos}} v={true} v2={false}></Cursos>
-                    <br></br>
-                <br></br>
-                    <Calificaciones value={{calificaciones:this.state.calificaciones}}></Calificaciones>
                     </div>
 
                   
