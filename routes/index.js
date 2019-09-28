@@ -4,7 +4,7 @@ var router = express.Router();
 let Mongoclient = require("mongodb").MongoClient;
 
 let url = "mongodb+srv://motriv:motriv1234@motriv-cluster001-jok7h.mongodb.net/test?retryWrites=true&w=majority";
-let client = new Mongoclient(url, {useNewUrlParser});
+let client = new Mongoclient(url, {useNewUrlParser:true});
 
 
 function connectProducto(callback){
