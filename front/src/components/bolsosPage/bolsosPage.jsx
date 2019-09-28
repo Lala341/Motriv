@@ -12,7 +12,7 @@ class BolsosPage extends Component {
 
   componentDidMount() {
     window.scrollTo(0, 0);
-/*     let promesa = axios.get("/crudBolsos", {
+    let promesa = axios.get("/productos", {
       headers: {
         "Content-Type": "application/x-www-form-urlencoded"
       }
@@ -22,18 +22,10 @@ class BolsosPage extends Component {
       this.setState({ productos: res.data });
 
     });
-    promesa.catch(() => console.log("pailas")); */
-
-    fetch("/productos")
-    .then(res => res.json())
-    .then(datos => {
-      this.setState({
-        productos: datos
-      })
-   });
+    promesa.catch(() => console.log("pailas"));
   }
 
-/* 
+
   refresh = () => {
     let promesa = axios.get("/productos", {
       headers: {
@@ -46,7 +38,7 @@ class BolsosPage extends Component {
 
     });
     promesa.catch(() => console.log("pailas"));
-  } */
+  }
 
   renderProductos(){
     return this.state.productos.map(p => <Catalogo productos={p} autenticado={this.props.autenticado} filtro={true} refresh={this.refresh} />);
