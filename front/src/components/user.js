@@ -6,6 +6,7 @@ class User extends Component {
     state ={
         usuario : "",
         password  : "",
+        productos :[],
         autentication :false,
         usershow:true
     }

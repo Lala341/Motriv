@@ -4,6 +4,7 @@ import {Redirect} from 'react-router-dom';
 class cardInstitucion extends Component {
     state={
       nombre:this.props.value.nombre,
+      image: this.props.value.image,
       redirect:false
     }
     renderRedirect = () => { 
@@ -20,8 +21,10 @@ class cardInstitucion extends Component {
     render() {
         return (
             <div className="col-5">
+
             <div className="card" >
-            <img src="http://img2.rtve.es/i/?w=1600&i=1529697257299.jpg" className="card-img-top" alt="hola" width="50" height="400"></img>
+             
+            <img src={this.state.image} className="card-img-top" alt="hola" width="50" height="400"></img>
             <div className="card-body">
            
              <button  onClick = { this.setRedirect } className="btn btn-primary">{this.state.nombre}</button>

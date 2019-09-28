@@ -9,9 +9,10 @@ class Institucion extends Component {
         nombre : "",
         cantidad  : "",
         precio:"",
+        descripcion:"",
         fechaCultivo: "",
         ubicacion:"",
-        imageUrl: "https://www.touchstoneedu.com/wp-content/uploads/2018/10/cambridge-universtiy-press-touchstone-educationals.jpg",
+        image: "",
         clima: ""
 
     }
@@ -23,11 +24,13 @@ class Institucion extends Component {
             console.log("2");
             this.setState({
                 nombre : m.nombre,
+                descripcion: m.descripcion,
                 cantidad : m.cantidad,
                 precio:m.precio,
                 fechaCultivo: m.fechaCultivo,
                 ubicacion:m.ubicacion,
-                clima: m.clima
+                clima: m.clima,
+                image: m.image
 
             
         });
@@ -98,11 +101,9 @@ class Institucion extends Component {
 <br></br>
 <h2>Cursos</h2>
 
-<Cursos value={{e:this.state.cursos}} v={false} v2={true}></Cursos>
 <br></br>
                 <br></br>
-                    <Calificaciones value={{calificaciones:this.state.calificaciones}}></Calificaciones>
-                    
+                             
 <br></br>
 <br></br>
 <h2>Escribir</h2>
@@ -127,21 +128,13 @@ class Institucion extends Component {
 <br></br>
 
 <div id="info-horario">
-Horario: {this.state.horario}
+ Ubicacion: {this.state.ubicacion}
+ <br></br>
+
+Clima: {this.state.clima}
 </div>
 
 
-
-<div id="info">
-    <h2>Sedes</h2>
-    <br></br>
-    {this.state.sedes.map((e,i)=><Sede key={i} value={e} />)}
-
-
-
-
-                                
-                                </div>
 
 
 </div>

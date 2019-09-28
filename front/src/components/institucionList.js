@@ -15,12 +15,15 @@ class InstitucionList extends Component {
     render() {
         
         return (
+            <div className="Text-center">  <h2>Productos</h2>
             <div className="row">
+                
                            {this.state.list.map((e,i)=>
                                
                               <CardInstitucion value={e} key={i}></CardInstitucion>
                             )}
 
+            </div>
             </div>
         );
     }

@@ -7,7 +7,7 @@ class userDetail extends Component {
         usuario : this.props.value.usuario,
         password  : this.props.value.password,
         correo:"",
-        cursos:[],
+        productos:[],
         rol:"",
         calificaciones:[],
         method: this.props.value.method
@@ -23,6 +23,7 @@ class userDetail extends Component {
             password : m.password,
             correo:m.correo,
             rol:m.rol,
+            productos: m.productos
             
         });
         

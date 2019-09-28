@@ -13,14 +13,14 @@ import RegistrarInstitucion from './registrarInstitucion';
 
 class App extends Component {
   componentDidMount(){
-    document.title = 'PINE';
+    document.title = 'MOTRIV';
   }
   render() {
     const App = () => (
       <div>
       <div>
       <Navbar>
-          <Navbar.Brand href="/">PINE</Navbar.Brand>
+          <Navbar.Brand href="/">MOTRIV</Navbar.Brand>
           <Navbar.Collapse>
               <Nav className="mr-auto">
                   <NavItem eventkey={1} href="/">
@@ -39,12 +39,12 @@ class App extends Component {
               </Nav>
               <Nav className="mr-auto">
                   <NavItem eventkey={1} href="/instituciones">
-                      <Nav.Link as={Link} to="/instituciones">Instituciones</Nav.Link>
+                      <Nav.Link as={Link} to="/instituciones">Productos</Nav.Link>
                   </NavItem>
               </Nav>
               <Nav className="mr-auto">
                   <NavItem eventkey={1} href="/registrarInstitucion">
-                      <Nav.Link as={Link} to="/registrarInstitucion">Registrar Institucion</Nav.Link>
+                      <Nav.Link as={Link} to="/registrarInstitucion">Registrar Producto</Nav.Link>
                   </NavItem>
               </Nav>
           </Navbar.Collapse>
