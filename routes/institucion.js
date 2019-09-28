@@ -38,12 +38,12 @@ router.post('/', (req, res, next) => {
             if (data.length === 0) {
                 client.db("Idioma").collection("Institucion").insertOne({
                     nombre: req.body.nombre,
-                    horario: req.body.horario,
-                    sedes: req.body.sedes ? req.body.sedes : [],
-                    calificaciones: [],
-                    cursos: [],
-                    descripcion: req.body.descripcion,
-                    correo: req.body.correo
+                    cantidad: req.body.cantidad,
+                    precio: req.body.precio,
+                    fechaCultivo: req.body.fechaCultivo,
+                    ubicacion: req.body.ubicacion,
+                    clima: req.body.clima,
+                    calificaciones: []
                 }).then(result => {
                     agregarCursos(req.body.cursos, req.body.nombre);
                     res.send("Se ha agregado correctamente la institución");

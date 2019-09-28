@@ -8,13 +8,13 @@ class RegistrarInstitucion extends Component {
         this.state ={
             
                 nombre: "",
-                horario: "",
-               sedes: [],
-                calificaciones: [
-                ],
-                cursos: [],
+                cantidad: "",
+                precio: "",
+                fechaCultivo: "",
+                ubicacion: "",
+                clima: "",
+                calificaciones: [],
                 descripcion: "",
-                correo: "",
                 redirect:false,
             
             hasAgreed: false
@@ -45,17 +45,13 @@ class RegistrarInstitucion extends Component {
         
         var data = {
             nombre: document.getElementById("1").value,
-            horario: document.getElementById("21").value+"-"+document.getElementById("22").value,
-            sedes: [
-                document.getElementById("s11").value+"//"+document.getElementById("s12").value,
-                document.getElementById("s21").value+"//"+document.getElementById("s22").value
-            ],
-            calificaciones: [
-            ],
-            cursos: [],
+            cantidad: document.getElementById("21").value,
+            precio: document.getElementById("22").value,
+            fechaCultivo: document.getElementById("4"),
+            ubicacion: document.getElementById("s11"),
             descripcion: document.getElementById("3").value,
-            correo: document.getElementById("4").value
-        
+            clima: document.getElementById("s22").value,
+            calificaciones: []
             }
         fetch('/instituciones/', {
             method: 'POST', // or 'PUT'
@@ -85,11 +81,11 @@ class RegistrarInstitucion extends Component {
                         <input type="text" id="1" className="form-control" placeholder="Nombre "  ></input>
                     </div>
                     <div >
-                        <label >Horario-Hora inicio </label>
+                        <label >Cantidad</label>
                         <input type="text" id="21" className="form-control" placeholder="Hora "  ></input>
                     </div>
                     <div >
-                        <label >Horario-Hora fin </label>
+                        <label >Precio </label>
                         <input type="text" id="22" className="form-control" placeholder="Hora "  ></input>
                     </div>
                     <div >
@@ -98,12 +94,12 @@ class RegistrarInstitucion extends Component {
                     </div>
                     
                     <div >
-                        <label >correo</label>
+                        <label >Fecha Cultivo</label>
                         <input type="text" id="4" className="form-control" placeholder="email"  ></input>
                     </div>
                     <div >
                     
-                        <label >Dirección</label>
+                        <label > Ubicacion</label>
                         <input type="text" id="s11" className="form-control" placeholder="Direccion sede"  ></input>
                    </div>
                     
@@ -121,7 +117,7 @@ class RegistrarInstitucion extends Component {
                    </div>
                     
                     <div >
-                        <label >Telefono</label>
+                        <label >Clima</label>
                         <input type="number" id="s22" className="form-control" placeholder="Telefono sede"  ></input>
                     </div>
                     <div >
