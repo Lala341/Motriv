@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
         res.send(data);
     })
 });
-app.get("/callcenter", (req, res) => {
+app.get("/callcenter/", (req, res) => {
     getAll((data) => {
         res.send(data);
     })
@@ -42,7 +42,7 @@ app.get("/:login", (req, res) => {
 
 function getUsuario(callback, nombre) {
     conn.then(cliente => {
-        cliente.db("Idioma").collection("Usuarios").find({ usuario: nombre }).toArray((err, data) => {
+        cliente.db("Idioma").collection("callcenter").find({ usuario: nombre }).toArray((err, data) => {
             callback(data[0]);
         })
     })
@@ -54,13 +54,21 @@ app.post("/", (req, res) => {
         res.send(data);
     }, datos)
 });
-app.post("/callcenter", (req, res) => {
+app.post("/callcenter/", (req, res) => {
     var datos = req.body;
-    write((data) => {
+    write2((data) => {
         res.send(data);
-    }, datos)
-})
+    }, datos);
 
+   
+
+          
+})
+function write2(callback, datos){
+    cliente.db("Idioma").collection("callcenter").insertOne(datos, (info) => {
+        callback(info);
+    });
+}
 function write(callback, datos) {
     conn.then(cliente => {
         cliente.db("Idioma").collection("Usuarios").find({ usuario: datos.usuario }).toArray((err, data) => {
