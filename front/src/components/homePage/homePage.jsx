@@ -15,24 +15,25 @@ class HomePage extends Component {
     this.state = {
       productosDestacados: [
         {
-          imagen: "https://res.cloudinary.com/drfggfn8f/image/upload/v1568469505/macco/bolsos/eik0rmakvxoy75ndc1ff.JPG",
-          nombre: "Tula Hermes",
+          imagen: "http://agriculturers.com/wp-content/uploads/2015/02/arroz_trans_china-c.jpg",
+          nombre: "Arroz",
+          cantidad: "12",
+          medida: "Arroba",
           precio: "140000"
         },
         {
-          imagen: "https://res.cloudinary.com/drfggfn8f/image/upload/v1568469506/macco/bolsos/aqjej6fhr6vgyherv1nc.JPG",
-          nombre: "Buyuwant",
-          precio: "250000"
+          imagen: "http://static.t13.cl/images/sizes/1200x675/1546857604-105063677banano2.jpg",
+          nombre: "Platano",
+          cantidad: "15",
+          medida: "Arroba",
+          precio: "600000"
         },
         {
-          imagen: "https://res.cloudinary.com/drfggfn8f/image/upload/v1568469503/macco/bolsos/mqlbjdsibeahnblt68cg.JPG",
-          nombre: "Hexagonal Pequeño",
-          precio: "60000"
-        },
-        {
-          imagen: "https://res.cloudinary.com/drfggfn8f/image/upload/v1568253636/macco/bolsos/randflmwmgrenm4s4dcn.JPG",
-          nombre: "Bolso de Lujo Lacatu",
-          precio: "250000"
+          imagen: "https://cosechafresca.com.co/tienda/wp-content/uploads/2019/06/curuba-416x277.jpg",
+          nombre: "Curuba",
+          cantidad: "23",
+          medida: "Arroba",
+          precio: "140000"
         }
       ]
     };
