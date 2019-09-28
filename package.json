@@ -19,5 +19,8 @@
     "jade": "~1.11.0",
     "mongodb": "^3.3.2",
     "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.4.0"
   }
 }
