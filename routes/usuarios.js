@@ -1,7 +1,8 @@
 var express = require('express');
 
-var ob = require('mongodb').ObjectID;
 
+var ob = require('mongodb').ObjectID;
+var bodyParser = require('body-parser');
 const MongoClient = require('mongodb').MongoClient;
 const uri = "mongodb+srv://motriv:motriv1234@motriv-cluster001-jok7h.mongodb.net/test?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -190,6 +191,49 @@ app.post("/:login/cursos", (req, res) => {
         });
     })
 })
+
+
+/* POST one institution by SMS
+  plssssssssssss*/
+
+var WEBHOOK_SECRET = "XE4WELUPNM76X4DPEL3LLLHCPL7EKUX3";
+
+app.post('/sms', bodyParser.urlencoded({ extended: true }), (req, res, next) => {
+    var body = req.body.content;
+    conn.then(client => {
+        client.db("Idioma").collection("Institucion").find({ nombre: req.body.nombre }).toArray((err, data) => {
+            if (data.length === 0) {
+                client.db("Idioma").collection("Institucion").insertOne({
+                    /*
+                    nombre: req.body.nombre,
+                    horario: req.body.horario,
+                    sedes: req.body.sedes ? req.body.sedes : [],
+                    calificaciones: [],
+                    cursos: [],
+                    descripcion: req.body.descripcion,
+                    correo: req.body.correo
+                    */
+                    nombre: "Maiz",
+                    cantidad :"2500",
+                    precio:"420",
+                    fechaCultivo:"10-10-2018",
+                    ubicacion:"Cali",
+                    clima:"templado",
+                    descripcion:body,
+                    image:"http://agrotiempo.com/wp-content/uploads/2017/01/cana-azucar.jpg",
+                }).then(result => {
+                    res.send("Se ha agregado correctamente la institución");
+                });
+            }
+            else {
+                res.status(409).send("Ya existe esa institución");
+            }
+        });
+
+    });
+});
+
+
 
 app.delete("/:login/cursos/:id", (req, res) => {
     let login = req.params.login
