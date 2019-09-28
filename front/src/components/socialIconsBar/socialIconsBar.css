@@ -1,0 +1,35 @@
+#facebook {
+    filter: invert(82%) sepia(1%) saturate(0%) hue-rotate(338deg) brightness(85%) contrast(84%);}
+
+#facebook:hover {
+    filter: invert(32%) sepia(53%) saturate(649%) hue-rotate(183deg) brightness(92%) contrast(89%);
+
+}
+
+#instagram {
+    filter: invert(82%) sepia(1%) saturate(0%) hue-rotate(338deg) brightness(85%) contrast(84%);}
+
+#instagram:hover {
+    filter: invert(31%) sepia(20%) saturate(5380%) hue-rotate(257deg) brightness(85%) contrast(93%);
+}
+
+#whatsapp {
+    filter: invert(82%) sepia(1%) saturate(0%) hue-rotate(338deg) brightness(85%) contrast(84%);}
+
+#whatsapp:hover {
+    filter: invert(91%) sepia(8%) saturate(5453%) hue-rotate(60deg) brightness(98%) contrast(64%);
+}
+
+.lista {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 0;
+
+}
+
+.itemLista {
+    list-style-type: none;
+    margin-right: 1%;
+    margin-left: 1%;
+}

@@ -1,0 +1,7 @@
+.slide {
+    width: 100%;
+}
+
+.react-slideshow-container + div.indicators > div.active {
+    background: #800e49 !important;
+}

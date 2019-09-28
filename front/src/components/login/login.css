@@ -1,0 +1,60 @@
+.contenedorLogin {
+  width: 100%;
+  margin-top: 10vh;
+}
+
+#login {
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.boton {
+	border-radius: 20px;
+	border: 1px solid #800349;
+	background-color: #800349;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+	outline: none;
+	cursor: pointer;
+}
+
+#botonLogin:active {
+	transform: scale(0.95);
+}
+
+#botonLogin:focus {
+	outline: none;
+}
+
+#formulario {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+.campoTexto {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+	#login {
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}

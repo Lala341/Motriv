@@ -1,0 +1,235 @@
+.container {
+  text-align: center;
+  position: relative;
+}
+
+.tituloFiltro {
+  margin: 0;
+  text-align: center;
+}
+
+.opcion {
+  margin: 2px;
+}
+
+#botonCerrado {
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+#botonAbierto {
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.botonFiltros {
+  height: 20px;
+  width: 20px;
+  margin: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#palabraFiltros {
+  text-align: left;
+  margin: 0;
+  margin-left: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+#sideDrawerNav{
+  margin: 0;
+}
+
+#sticky {
+  position: sticky;
+  overflow: hidden;
+  width: 100%;
+  top: 96px;
+  background-color: white;
+  -webkit-box-shadow: 0px 52px 40px 2px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 52px 40px 2px rgba(0,0,0,0.15);
+  box-shadow: 0px 52px 40px 2px rgba(0,0,0,0.15);
+  opacity: 0.95;
+  z-index: 5;
+}
+
+.filtros{
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  position: sticky;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+}
+
+.contenedorInputValor{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.inputFiltro {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+.filtro{
+  list-style-type: none;
+  font-size: 100%;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+
+#negro {
+  background-color: black;
+  height: 19px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+#rojo {
+  background-color: rgb(223, 19, 19);
+  height: 19px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+#blanco {
+  background-color: white;
+  border:  1px solid #800e49;
+  height: 17px;
+  width: 48px;
+  border-radius: 25px;
+}
+
+#azul {
+  background-color: darkblue;
+  height: 19px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+#verde {
+  background-color: green;
+  height: 19px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+#rosado {
+  background-color: pink;
+  height: 19px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+#cafe {
+  background-color: rgb(156, 114, 60);
+  height: 19px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+#fucsia {
+  background-color: rgba(255, 0, 55, 0.74);
+  height: 19px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+#azulClaro {
+  background-color: rgb(192, 242, 255);
+  height: 19px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+#amarillo {
+  background-color: yellow;
+  height: 19px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+#avano {
+  background-color: rgba(240, 208, 170, 0.767);
+  height: 19px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  #sticky {
+    position: sticky;
+    overflow: hidden;
+    width: 100%;
+    top: 59px;
+    background-color: white;
+    -webkit-box-shadow: 0px 52px 40px 2px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 52px 40px 2px rgba(0,0,0,0.15);
+    box-shadow: 0px 52px 40px 2px rgba(0,0,0,0.15);
+    opacity: 0.95;
+    z-index: 5;
+  }
+  #boton {
+      display: block;
+      padding: 2vw;
+      font-size: 35px;
+      background-color: white;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      position: absolute;
+      left:0;
+  }
+
+  .contenedorInputValor{
+    justify-content: center;
+    margin: 5px;
+  }
+
+  .titulosHorizontal{
+      display: none;
+  }
+
+  .tituloFiltro {
+    font-size: 20px;
+  }
+
+  .opcion {
+    font-size: 15px;
+    margin: 2px;
+  }
+
+  .filtros{
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      flex-direction: column;
+      font-size: 50%;
+  }
+
+  #filtro{
+      list-style-type: none;
+      font-size: 4vh;
+      padding-top: 2vw;
+      padding-bottom: 2vw;
+      padding-left: 2vw;
+      padding-right: 2vw;
+  }
+}

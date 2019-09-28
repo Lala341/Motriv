@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   x="0px"
+   y="0px"
+   width="48"
+   height="48"
+   viewBox="0 0 172 172"
+   style=" fill:#000000;"
+   version="1.1"
+   id="svg13"
+   sodipodi:docname="instagram.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata19">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs17" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2736"
+     inkscape:window-height="1699"
+     id="namedview15"
+     showgrid="false"
+     inkscape:zoom="19.666667"
+     inkscape:cx="7.2204819"
+     inkscape:cy="21.697867"
+     inkscape:window-x="-13"
+     inkscape:window-y="-13"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg13" />
+  <path
+     style="font-family:none;mix-blend-mode:normal;fill:none;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:connector-curvature="0"
+     id="path2"
+     d="M 0,172 V 0 h 172 v 172 z" />
+  <path
+     style="font-family:none;mix-blend-mode:normal;fill:#000000;fill-rule:nonzero;stroke:none;stroke-width:0.27906978;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0"
+     d="M 24 0 C 10.745163 0 0 10.745163 0 24 C 0 37.254837 10.745163 48 24 48 C 37.254837 48 48 37.254837 48 24 C 48 10.745163 37.254837 0 24 0 z M 18.765625 11.294922 L 29.234375 11.294922 C 33.339938 11.294922 36.705078 14.664416 36.705078 18.765625 L 36.705078 29.234375 C 36.705078 33.339938 33.335445 36.705078 29.234375 36.705078 L 18.765625 36.705078 C 14.659895 36.705078 11.294922 33.335445 11.294922 29.234375 L 11.294922 18.765625 C 11.294922 14.659895 14.664416 11.294922 18.765625 11.294922 z M 18.765625 13.605469 C 15.909631 13.605469 13.605469 15.909653 13.605469 18.765625 L 13.605469 29.234375 C 13.605469 32.090219 15.909653 34.394531 18.765625 34.394531 L 29.234375 34.394531 C 32.090219 34.394531 34.394531 32.090235 34.394531 29.234375 L 34.394531 18.765625 C 34.394531 15.909631 32.090235 13.605469 29.234375 13.605469 L 18.765625 13.605469 z M 30.822266 16.130859 C 31.404271 16.130859 31.869141 16.595662 31.869141 17.177734 C 31.869141 17.75974 31.404271 18.224609 30.822266 18.224609 C 30.240146 18.224609 29.775391 17.75974 29.775391 17.177734 C 29.775391 16.595659 30.240146 16.130859 30.822266 16.130859 z M 24 17.070312 C 27.812428 17.070313 30.929688 20.187572 30.929688 24 C 30.929688 27.812428 27.812428 30.929688 24 30.929688 C 20.187572 30.929688 17.070312 27.812428 17.070312 24 C 17.070313 20.187572 20.187572 17.070312 24 17.070312 z M 24 19.380859 C 21.432781 19.380859 19.380859 21.432781 19.380859 24 C 19.380859 26.567219 21.432781 28.619141 24 28.619141 C 26.567219 28.619141 28.619141 26.567219 28.619141 24 C 28.619141 21.432781 26.567219 19.380859 24 19.380859 z "
+     id="path4"
+     transform="scale(3.5833333)" />
+</svg>
