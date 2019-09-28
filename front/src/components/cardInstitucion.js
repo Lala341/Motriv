@@ -21,7 +21,7 @@ class cardInstitucion extends Component {
       }  
     render() {
         return (
-            <div className="col-5">
+            <div className="col-3" id="contenedorProd">
 
             <div className="card" id="imagenProd">
              
